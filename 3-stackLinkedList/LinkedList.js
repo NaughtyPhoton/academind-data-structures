@@ -1,4 +1,3 @@
-
 export class LinkedList {
     constructor() {
         this.head = null;
@@ -36,7 +35,7 @@ export class LinkedList {
                 newNode.next = foundNode.next;
             }
             foundNode.next = newNode;
-            return true
+            return true;
         } else return false;
     }
 
@@ -79,30 +78,9 @@ export class LinkedList {
         if (this.head.next) {
             this.head = this.head.next;
         } else {
-            this.head = null
+            this.head = null;
             this.tail = null;
         }
         return deletedItem;
     }
 }
-
-const linkedList1 = new LinkedList();
-
-linkedList1.append(1);
-linkedList1.append(1);
-linkedList1.append('Hellllooo');
-linkedList1.append('cool');
-linkedList1.append(2);
-linkedList1.append(1);
-linkedList1.append(1);
-linkedList1.append('pumpkin');
-
-linkedList1.prepend('first');
-
-linkedList1.delete(1);
-linkedList1.delete('cool');
-
-console.log(linkedList1.find(2));
-console.log(linkedList1.find('doesn\'t exist'));
-console.log(linkedList1.insertAfter('first', 'pancakes'))
-console.log(linkedList1.toArray());

@@ -1,0 +1,25 @@
+{
+  "name": "academind-data-structures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaughtyPhoton/academind-data-structures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaughtyPhoton/academind-data-structures/issues"
+  },
+  "homepage": "https://github.com/NaughtyPhoton/academind-data-structures#readme"
+}
