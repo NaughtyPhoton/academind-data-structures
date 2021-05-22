@@ -45,9 +45,11 @@ class Node {
     }
 
     find(value) {
-        // Depth-First
+        // Breadth-First
         for (const child of this.children) {
             if (child.value === value) return child;
+        }
+        for (const child of this.children) {
             const nestedChildNode = child.find(value);
             if (nestedChildNode) {
                 return nestedChildNode;
